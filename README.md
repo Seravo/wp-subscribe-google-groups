@@ -6,3 +6,5 @@ Behind the scenes plugin sends subscription e-mail to `GROUPNAME+subscribe@googl
 
 ## Known issues
 If domain for the subscribing user has published strict SPF/DMARC policies, receiving domain might reject mail sent from invalid server (server hosting the WP site).
+
+Also, see `grep -RE "(TODO|FIXME)" .`.
