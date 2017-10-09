@@ -1,0 +1,74 @@
+# Copyright (C) 2017 Google Groups Subscribe
+# This file is distributed under the same license as the Google Groups Subscribe package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Google Groups Subscribe 1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-google-groups-"
+"subscribe\n"
+"POT-Creation-Date: 2017-10-08 09:07:02+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-10-09 07:11+0300\n"
+"Language-Team: \n"
+"X-Generator: Poedit 1.8.11\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: fi_FI\n"
+
+#: google-groups-subscribe.php:141 widget.php:238
+msgid ""
+"Success. You should receive confirmation message in 10 minutes. If not, "
+"please subscribe manually."
+msgstr ""
+"Onnistui. Sinun pitäisi saada vahvistusviesti 10 minuutin sisällä. Ellei "
+"viestiä tule, liity ryhmään manuaalisesti."
+
+#: google-groups-subscribe.php:142 widget.php:241
+msgid "Error. Subscribing to group failed. Please, subscribe manually."
+msgstr ""
+"Virhe. Ryhmään liittyminen epäonnistui. Ole hyvä, ja liity manuaalisesti."
+
+#: widget.php:55
+msgid "Widget for subscribing to Google Groups."
+msgstr "Vimpain, jonka avulla voi liittyä Google-ryhmiin"
+
+#: widget.php:130
+msgid "Title:"
+msgstr "Otsikko:"
+
+#: widget.php:138
+msgid "Group Name:"
+msgstr "Ryhmän nimi:"
+
+#: widget.php:178
+msgid "Please, enter group name in widget settings."
+msgstr "Ole hyvä, ja aseta ryhmän nimi vimpaimen asetuksissa."
+
+#: widget.php:213
+msgid "E-mail:"
+msgstr "Sähköpostiosoite:"
+
+#: widget.php:225
+msgid "Subscribe"
+msgstr "Liity"
+
+#. Plugin Name of the plugin/theme
+msgid "Google Groups Subscribe"
+msgstr "Google -ryhmiin liittyminen"
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/Seravo/wp-google-groups-subscribe"
+msgstr "https://github.com/Seravo/wp-google-groups-subscribe"
+
+#. Description of the plugin/theme
+msgid "Adds widget for subscribing to Google Groups"
+msgstr "Vimpain, jonka avulla voi liittyä Google-ryhmiin"
+
+#. Author of the plugin/theme
+msgid "Seravo Oy"
+msgstr "Seravo Oy"
+
+#. Author URI of the plugin/theme
+msgid "https://seravo.com/"
+msgstr "https://seravo.com/"
