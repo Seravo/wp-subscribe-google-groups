@@ -176,6 +176,7 @@ class Widget extends \WP_Widget
 
     ?>
     
+    <div class="google-groups-subscribe-widget">
     <form method="POST" action="<?php echo admin_url('admin-post.php'); ?>">
     <?php
     wp_nonce_field(Plugin::PLUGIN_ID);
@@ -242,7 +243,8 @@ class Widget extends \WP_Widget
       printf('<p>%s</p>', $msg);
     }
     ?>
-    </div>    
+    </div><!-- /.status --->
+    </div><!-- /.google-groups-subscribe-widget -->
     <?php
 
     echo $args['after_widget'];
