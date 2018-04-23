@@ -115,8 +115,8 @@ class Plugin {
     $path = WP_LANG_DIR . DIRECTORY_SEPARATOR . self::PLUGIN_ID . DIRECTORY_SEPARATOR;
     $path .= self::DOMAIN . '-' . $locale . '.mo';
 
-    load_textdomain(self::DOMAIN, $path);
-    load_muplugin_textdomain(self::DOMAIN, plugin_dir_path(__FILE__) . DIRECTORY_SEPARATOR . 'languages');
+    //load_textdomain(self::DOMAIN, $path);
+    load_plugin_textdomain(self::DOMAIN, false, plugin_dir_path(__FILE__) . DIRECTORY_SEPARATOR . 'languages');
   }
 
   /**

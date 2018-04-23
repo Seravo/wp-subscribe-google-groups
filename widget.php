@@ -105,7 +105,7 @@ class Widget extends \WP_Widget
    */
   public function formfield($title, $options, $plain = false) {
     if (!empty($title)) {
-      $label = sprintf('<label for="%s">%s</label>', '', $title);
+      $label = sprintf('<label for="%s">%s</label>', '', __($title, Plugin::DOMAIN));
     } else {
       $label = '';
     }
