@@ -243,7 +243,7 @@ class Widget extends \WP_Widget
       printf('<p>%s</p>', $msg);
     }
     ?>
-    </div><!-- /.status --->
+    </div><!-- /.status -->
     </div><!-- /.google-groups-subscribe-widget -->
     <?php
 
