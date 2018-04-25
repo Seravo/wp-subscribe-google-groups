@@ -1,4 +1,4 @@
-=== Plugin Name ===
+=== Subscribe Google Groups ===
 Contributors: ypcs
 Donate link: https://seravo.com
 Tags: google groups, email, subscribe, widget
@@ -13,7 +13,7 @@ Add widget(s) for subscribing to admin-specified Google Groups
 
 == Description ==
 
-This plugin adds new widget 'Google Groups Subscribe', which allows visitors to sign up to admin-specified Google Group.
+This plugin adds new widget 'Subscribe Google Groups', which allows visitors to sign up to admin-specified Google Group.
 
 After user as entered her e-mail address and submits the form, plugin (tries to) sends e-mail to GROUPNAME+subscribe@googlegroups.com. Afterwards, Google Groups sends confirmation link to submitter, and when user has clicked the link, she gets added to the group.
 
@@ -27,7 +27,7 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload the plugin files to the `/wp-content/plugins/wp-google-groups-subscribe` directory, or install the plugin through the WordPress plugins screen directly.
+1. Upload the plugin files to the `/wp-content/plugins/subscribe-google-groups` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 1. Use the Appearance -> Widgets screen to add the widget to desired places in your layout
 1. Configure widgets, ie. fill at least the name of your group, "slug"

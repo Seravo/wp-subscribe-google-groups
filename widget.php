@@ -1,9 +1,9 @@
 <?php
  /**
- * @package Seravo\GoogleGroupsSubscribe
+ * @package Seravo\SubscribeGoogleGroups
  * @version 1.0
  *
- * wp-google-groups-subscribe - WordPress Plugin/Widget for subscribing to Google Groups.
+ * wp-subscribe-google-groups - WordPress Plugin/Widget for subscribing to Google Groups.
  * Copyright (C) 2017 Seravo Oy <https://seravo.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-namespace Seravo\GoogleGroupsSubscribe;
+namespace Seravo\SubscribeGoogleGroups;
 
 // If WP is calling, ABSPATH is defined. And no-one else should call.
 if (!defined('ABSPATH')) {
@@ -177,7 +177,7 @@ class Widget extends \WP_Widget
 
     ?>
     
-    <div class="google-groups-subscribe-widget">
+    <div class="subscribe-google-groups-widget">
     <form method="POST" action="<?php echo admin_url('admin-post.php'); ?>">
     <?php
     wp_nonce_field(Plugin::PLUGIN_ID);

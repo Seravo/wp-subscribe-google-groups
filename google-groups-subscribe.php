@@ -1,20 +1,20 @@
 <?php
 /**
- * Plugin Name: Google Groups Subscribe
+ * Plugin Name: Subscribe Google Groups
  * Version: 1.0
- * Plugin URI: https://github.com/Seravo/wp-google-groups-subscribe
+ * Plugin URI: https://github.com/Seravo/wp-subscribe-google-groups
  * Description: Widget for subscribing to Google Groups.
  * Author: Seravo Oy
  * Author URI: https://seravo.com/
- * Text Domain: google-groups-subscribe
+ * Text Domain: subscribe-google-groups
  * Domain Path: /languages/
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  *
- * @package Seravo\GoogleGroupsSubscribe
+ * @package Seravo\SubscribeGoogleGroups
  * @version 1.0
  *
- * wp-google-groups-subscribe - WordPress Plugin/Widget for subscribing to Google Groups.
+ * wp-subscribe-google-groups - WordPress Plugin/Widget for subscribing to Google Groups.
  * Copyright (C) 2017 Seravo Oy <https://seravo.com>
  *
  * This program is free software; you can redistribute it and/or modify
@@ -36,7 +36,7 @@
 // TODO: validate nonce w/ widget_number
 // TODO: Limit subscription requests using Recaptcha or another mechanism
 
-namespace Seravo\GoogleGroupsSubscribe;
+namespace Seravo\SubscribeGoogleGroups;
 
 // Don't allow user to access this file directly
 if (!defined('ABSPATH')) {
@@ -52,21 +52,21 @@ class Plugin {
   // Toggle debug mode (log messages?)
   const DEBUG = false;
 
-  const PLUGIN_NAME = 'Google Groups Subscribe';
-  const PLUGIN_ID = 'google-groups-subscribe';
+  const PLUGIN_NAME = 'Subscribe Google Groups';
+  const PLUGIN_ID = 'subscribe-google-groups';
 
   // TODO: This could be configurable
   const SUBSCRIPTION_ADDRESS = '%s+subscribe@googlegroups.com';
   //const SUBSCRIPTION_URL = 'https://groups.google.com/forum/#!forum/%s/join';
 
   // Object reference for JavaScript
-  const PLUGIN_OBJ = 'Google_Groups_Subscribe_AJAX';
+  const PLUGIN_OBJ = 'Subscribe_Google_Groups_AJAX';
 
   // i18n language domain
-  const DOMAIN = 'google-groups-subscribe';
+  const DOMAIN = 'subscribe-google-groups';
 
   // WP admin-post action name
-  const ACTION_PROCESS = 'process_google_groups_subscribe';
+  const ACTION_PROCESS = 'process_subscribe_google_groups';
 
   // Form field ids
   const TITLE_ID = 'title';
@@ -143,7 +143,7 @@ class Plugin {
    * Register our widget to WordPress
    */
   public static function registerWidget() {
-    register_widget('Seravo\GoogleGroupsSubscribe\Widget');
+    register_widget('Seravo\SubscribeGoogleGroups\Widget');
   }
 
   /**
