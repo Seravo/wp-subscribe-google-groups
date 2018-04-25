@@ -1,6 +1,6 @@
-# Wordpress Google Groups Subscribe
+# Wordpress Subscribe Google Groups -plugin
 
-Adds new widget 'Google Groups Subscribe', that allows user to enter e-mail address she wants to get subscribed into admin-selected Google Group.
+Adds new widget 'Subscribe Google Groups', that allows user to enter e-mail address she wants to get subscribed into admin-selected Google Group.
 
 Behind the scenes plugin sends subscription e-mail to `GROUPNAME+subscribe@googlegroups.com`. If everything goes well, user gets notified for succesful operation. If WordPress detects error while subscribing, user gets error message.
 
