@@ -1,7 +1,7 @@
 === Subscribe Google Groups ===
-Contributors: ypcs
-Donate link: https://seravo.com
-Tags: google groups, email, subscribe, widget
+Contributors: Mitch Negus (mitchnegus)
+Donate link: 
+Tags: berkeley, google groups, email, subscribe, widget
 Requires at least: 4.9
 Tested up to: 4.9.5
 Stable tag: trunk
@@ -13,9 +13,9 @@ Add widget(s) for subscribing to admin-specified Google Groups
 
 == Description ==
 
-This plugin adds new widget 'Subscribe Google Groups', which allows visitors to sign up to admin-specified Google Group.
+This plugin modifies the widget 'Subscribe Google Groups', which allows visitors to sign up to admin-specified Google Group. This modification is designed for UC Berkeley Google Groups hosted at `lists.berkeley.edu`. 
 
-After user as entered her e-mail address and submits the form, plugin (tries to) sends e-mail to GROUPNAME+subscribe@googlegroups.com. Afterwards, Google Groups sends confirmation link to submitter, and when user has clicked the link, she gets added to the group.
+After a user has entered her e-mail address and submits the form, the plugin (tries to) send an e-mail to `GROUPNAME+subscribe@lists.berkeley.edu`. Afterwards, the Berkeley Google Groups sends a confirmation link to the user, and the user is added to the group after clicking the link. 
 
 Note: If user domain has strict SPF/DKIM policies for e-mail handling, @googlegroups.com might reject their subscription request. In this case user needs to subscribe manually (by sending mail from her e-mail client or by visiting group page.)
 
@@ -27,10 +27,10 @@ This section describes how to install the plugin and get it working.
 
 e.g.
 
-1. Upload the plugin files to the `/wp-content/plugins/subscribe-google-groups` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-1. Use the Appearance -> Widgets screen to add the widget to desired places in your layout
-1. Configure widgets, ie. fill at least the name of your group, "slug"
+1. Upload the plugin files to the `/wp-content/plugins/subscribe-berkeley-groups` directory.
+2. Activate the plugin through the 'Plugins' screen in WordPress
+3. Use the Appearance -> Widgets screen to add the widget to desired places in your layout
+4. Configure widgets, ie. fill in the "slug" of your group name (i.e. `bookclub` for `bookclub@lists.berkeley.edu`). 
 
 
 == Frequently Asked Questions ==
