@@ -4,7 +4,7 @@
  * @version 1.0
  *
  * wp-subscribe-berkeley-groups - WordPress Plugin/Widget for subscribing to 
- * Google Groups.
+ * Berkeley Google Groups.
  * Copyright (C) 2018 Mitch Negus 
  * (adapted from wp-subscribe-google-groups, a plugin by Seravo Oy)
  *

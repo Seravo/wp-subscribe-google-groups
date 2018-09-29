@@ -1,21 +1,23 @@
 <?php
 /**
- * Plugin Name: Subscribe Google Groups
+ * Plugin Name: Subscribe Berkeley Groups
  * Version: 1.0
- * Plugin URI: https://github.com/Seravo/wp-subscribe-google-groups
- * Description: Widget for subscribing to Google Groups.
- * Author: Seravo Oy
- * Author URI: https://seravo.com/
- * Text Domain: subscribe-google-groups
+ * Plugin URI: https://github.com/mitchnegus/wp-subscribe-berkeley-groups
+ * Description: Widget for subscribing to Berkeley Google Groups.
+ * Author: Mitch Negus
+ * Author URI: 
+ * Text Domain: subscribe-berkeley-groups
  * Domain Path: /languages/
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
  *
- * @package Seravo\SubscribeGoogleGroups
+ * @package mitchnegus\SubscribeBerkeleyGroups
  * @version 1.0
  *
- * wp-subscribe-google-groups - WordPress Plugin/Widget for subscribing to Google Groups.
- * Copyright (C) 2017 Seravo Oy <https://seravo.com>
+ * wp-subscribe-berkeley-groups - WordPress Plugin/Widget for subscribing to 
+ * Berkeley Google Groups.
+ * Copyright (C) 2018 Mitch Negus
+ * (adapated from Seravo Oy <https://seravo.com>)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -36,7 +38,7 @@
 // TODO: validate nonce w/ widget_number
 // TODO: Limit subscription requests using Recaptcha or another mechanism
 
-namespace Seravo\SubscribeGoogleGroups;
+namespace mitchnegus\SubscribeBerkeleyGroups;
 
 // Don't allow user to access this file directly
 if (!defined('ABSPATH')) {
@@ -52,21 +54,21 @@ class Plugin {
   // Toggle debug mode (log messages?)
   const DEBUG = false;
 
-  const PLUGIN_NAME = 'Subscribe Google Groups';
-  const PLUGIN_ID = 'subscribe-google-groups';
+  const PLUGIN_NAME = 'Subscribe Berkeley Groups';
+  const PLUGIN_ID = 'subscribe-berkeley-groups';
 
   // TODO: This could be configurable
-  const SUBSCRIPTION_ADDRESS = '%s+subscribe@googlegroups.com';
+  const SUBSCRIPTION_ADDRESS = '%s+subscribe@lists.berkeley.edu';
   //const SUBSCRIPTION_URL = 'https://groups.google.com/forum/#!forum/%s/join';
 
   // Object reference for JavaScript
   const PLUGIN_OBJ = 'Subscribe_Google_Groups_AJAX';
 
   // i18n language domain
-  const DOMAIN = 'subscribe-google-groups';
+  const DOMAIN = 'subscribe-berkeley-groups';
 
   // WP admin-post action name
-  const ACTION_PROCESS = 'process_subscribe_google_groups';
+  const ACTION_PROCESS = 'process_subscribe_berkeley_groups';
 
   // Form field ids
   const TITLE_ID = 'title';
@@ -143,7 +145,7 @@ class Plugin {
    * Register our widget to WordPress
    */
   public static function registerWidget() {
-    register_widget('Seravo\SubscribeGoogleGroups\Widget');
+    register_widget('mitchnegus\SubscribeBerkeleyGroups\Widget');
   }
 
   /**
