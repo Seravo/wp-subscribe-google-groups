@@ -1,10 +1,12 @@
 <?php
  /**
- * @package Seravo\SubscribeGoogleGroups
+ * @package mitchnegus\SubscribeBerkeleyGroups
  * @version 1.0
  *
- * wp-subscribe-google-groups - WordPress Plugin/Widget for subscribing to Google Groups.
- * Copyright (C) 2017 Seravo Oy <https://seravo.com>
+ * wp-subscribe-berkeley-groups - WordPress Plugin/Widget for subscribing to 
+ * Google Groups.
+ * Copyright (C) 2018 Mitch Negus 
+ * (adapted from wp-subscribe-google-groups, a plugin by Seravo Oy)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -21,7 +23,7 @@
  * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
  */
 
-namespace Seravo\SubscribeGoogleGroups;
+namespace mitchnegus\SubscribeBerkeleyGroups;
 
 // If WP is calling, ABSPATH is defined. And no-one else should call.
 if (!defined('ABSPATH')) {
@@ -34,7 +36,7 @@ if (!defined('ABSPATH')) {
  * Widget
  *
  * Provides WordPress widget for subscribing to admin-specified
- * Google Group.
+ * Berkeley Google Group.
  *
  * User enters e-mail address to textfield in widget, clicks 'Subscribe',
  * and gets confirmation mail from Google.
@@ -177,7 +179,7 @@ class Widget extends \WP_Widget
 
     ?>
     
-    <div class="subscribe-google-groups-widget">
+    <div class="subscribe-berkeley-groups-widget">
     <form method="POST" action="<?php echo admin_url('admin-post.php'); ?>">
     <?php
     wp_nonce_field(Plugin::PLUGIN_ID);
@@ -245,14 +247,14 @@ class Widget extends \WP_Widget
     }
     ?>
     </div><!-- /.status -->
-    </div><!-- /.google-groups-subscribe-widget -->
+    </div><!-- /.subscribe-berkeley-groups-widget -->
     <?php
 
     echo $args['after_widget'];
   }
 
   /**
-   * Get Google Groups group name
+   * Get Berkeley Google Groups group name
    *
    * @param $widget_number widget number for which we're looking the info
    * @return returns group name or empty string if name can't be determined

@@ -7,8 +7,10 @@
  * - display status message when data is received
  *
  *
- * wp-subscribe-google-groups - WordPress Plugin/Widget for subscribing to Google Groups.
- * Copyright (C) 2017 Seravo Oy <https://seravo.com>
+ * wp-subscribe-berkeley-groups - WordPress Plugin/Widget for subscribing to 
+ * Berkeley Google Groups.
+ * Copyright (C) 2018 Mitch Negus 
+ * (adapted from wp-subscribe-google-groups, a plugin by Seravo Oy)
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

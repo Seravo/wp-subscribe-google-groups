@@ -1,8 +1,8 @@
 # Copyright (C) 2017 Google Groups Subscribe
-# This file is distributed under the same license as the Google Groups Subscribe package.
+# This file is distributed under the same license as the Berkeley Groups Subscribe package.
 msgid ""
 msgstr ""
-"Project-Id-Version: Google Groups Subscribe 1.0\n"
+"Project-Id-Version: Berkeley Groups Subscribe 1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wp-google-groups-"
 "subscribe\n"
 "POT-Creation-Date: 2017-10-08 09:07:02+00:00\n"
@@ -24,7 +24,7 @@ msgid "Error. Subscribing to group failed. Please, subscribe manually."
 msgstr ""
 
 #: widget.php:55
-msgid "Widget for subscribing to Google Groups."
+msgid "Widget for subscribing to Berkeley Google Groups."
 msgstr ""
 
 #: widget.php:130
@@ -48,22 +48,22 @@ msgid "Subscribe"
 msgstr ""
 
 #. Plugin Name of the plugin/theme
-msgid "Google Groups Subscribe"
+msgid "Berkeley Groups Subscribe"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "https://github.com/Seravo/wp-google-groups-subscribe"
+msgid "https://github.com/mitchnegus/wp-berkeley-groups-subscribe"
 msgstr ""
 
 #. Description of the plugin/theme
-msgid "Adds widget for subscribing to Google Groups"
+msgid "Adds widget for subscribing to Berkeley Google Groups"
 msgstr ""
 
 #. Author of the plugin/theme
-msgid "Seravo Oy"
+msgid "Mitch Negus"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "https://seravo.com/"
+msgid ""
 msgstr ""
 
