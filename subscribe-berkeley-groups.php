@@ -137,7 +137,7 @@ class Plugin {
       'nonce' => wp_create_nonce(self::PLUGIN_ID),
       'class' => self::PLUGIN_ID,
       'successMessage' => __('Success. You should receive confirmation message in 10 minutes. If not, please use the contact page to get on the list.', self::DOMAIN),
-      'errorMessage' => __('Error. Subscribing to group failed. Please, use the contact page to get on the list.', self::DOMAIN)
+      'errorMessage' => __('Error. Subscribing to group failed. Please use the contact page to get on the list.', self::DOMAIN)
     ));
   }
 
