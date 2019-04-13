@@ -5,7 +5,7 @@
  * Plugin URI: https://github.com/mitchnegus/wp-subscribe-berkeley-groups
  * Description: Widget for subscribing to Berkeley Google Groups.
  * Author: Mitch Negus
- * Author URI: 
+ * Author URI: www.mitchnegus.com
  * Text Domain: subscribe-berkeley-groups
  * Domain Path: /languages/
  * License: GPLv2 or later
