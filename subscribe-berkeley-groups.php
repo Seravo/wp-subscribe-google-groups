@@ -16,7 +16,7 @@
  *
  * wp-subscribe-berkeley-groups - WordPress Plugin/Widget for subscribing to 
  * Berkeley Google Groups.
- * Copyright (C) 2018 Mitch Negus
+ * Copyright (C) 2018-2019 Mitch Negus
  * (adapated from Seravo Oy <https://seravo.com>)
  *
  * This program is free software; you can redistribute it and/or modify
