@@ -60,7 +60,7 @@ class Plugin {
   //const SUBSCRIPTION_URL = 'https://groups.google.com/forum/#!forum/%s/join';
 
   // Object reference for JavaScript
-  const PLUGIN_OBJ = 'Subscribe_Google_Groups_AJAX';
+  const PLUGIN_OBJ = 'Google_Groups_Subscribe_AJAX';
 
   // i18n language domain
   const DOMAIN = 'subscribe-google-groups';
