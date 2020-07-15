@@ -26,8 +26,8 @@
  */
 
 jQuery(document).ready(function($) {
-  var url = Google_Groups_Subscribe_AJAX.ajaxUrl;
-  var ggs_forms = '.widget.' + Google_Groups_Subscribe_AJAX.class + ' form';
+  var url = Subscribe_Google_Groups_AJAX.ajaxUrl;
+  var ggs_forms = '.widget.' + Subscribe_Google_Groups_AJAX.class + ' form';
 
   // On submit, prevent default action & do AJAX query,
   // display status when finished
@@ -35,15 +35,15 @@ jQuery(document).ready(function($) {
     event.preventDefault();
     $.post(url, $(this).serialize(), function(data) {
       // FIXME: This can be done in a much cleaner way.
-      var id = Google_Groups_Subscribe_AJAX.class + '-' + parseInt(data['widget_number']);
+      var id = Subscribe_Google_Groups_AJAX.class + '-' + parseInt(data['widget_number']);
       var e = $('#' + id + ' .status');
 
       // FIXME: blocks below move when .status is resized
       if (data.status == 'success') {
-        e.text(Google_Groups_Subscribe_AJAX.successMessage);
+        e.text(Subscribe_Google_Groups_AJAX.successMessage);
         e.show().fadeOut(10000);
       } else {
-        e.text(Google_Groups_Subscribe_AJAX.errorMessage);
+        e.text(Subscribe_Google_Groups_AJAX.errorMessage);
         e.show().fadeOut(10000);
       }
     });
